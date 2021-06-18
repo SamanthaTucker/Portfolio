@@ -1,38 +1,172 @@
-.App {
+body{
+  background-color: black;
+}
+.root-div{
+  background-color: rgba(12, 12, 12, 0.2);
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: burlywood;
+  padding: 30px;
+  text-align: center;
+}
+.nav-link:hover{
+  font-size: 22px;
+}
+.initials{
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  font-size: 23px;
+  color: whitesmoke;
+  padding: 15px;
+  margin-right: 40px;
+  background-color: rgba(12, 12, 12, 0.4);
+  border-radius: 50%;
+  border: 3px solid burlywood;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header CSS */
+.header-div{
+  position: relative;
 }
+.header-intro{
+  position: absolute;
+  bottom: 55px;
+  padding-left: 30px;
+}
+.header-image{
+  background-size: cover;
+  width: 100%;
+}
+.header-h1{
+  color: white;
+  font-size: 75px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+}
+.header-h2{
+  color: white;
+  font-size: 26px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+}
+/*             */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Project CSS */
+.projects-h1{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+.project-card-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#project-card{
+  margin: 20px;
+}
+/*           */
+
+/* About CSS */
+.about-div{
+  background-color: rgba(12, 12, 12, 0.2);
+}
+.about-flex{
+  display: flex;
+}
+.about-h2{
+  padding: 10px;
+  font-size: 48px;
+  color: burlywood;
+  text-align: center;
+}
+.about-intro{
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+}
+/*             */
+
+/* Profile img CSS */
+.profile-img-div{
+  padding: 45px;
+}
+.profile-img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid burlywood;
+  padding: 5px;
+}
+/*             */
+
+/* Skills CSS */
+.skills-div{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.skills-category{
+  font-size: 26px;
+  color: burlywood;
 }
+.skills-list{
+  font-size: 23px;
+  color: whitesmoke;
+}
+/*           */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Contact CSS */
+.contact-div{
+  border: 3px solid burlywood;
+  padding: 20px;
+  margin: 15px;
+}
+#contact-flex-div{
+  display: flex;
+}
+.contact-h2{
+  color: burlywood;
+  font-size: 40px;
+}
+.contact-info-div{
+  margin: 10px;
+  padding: 10px;
+  align-items: left;
+}
+.contact-p{
+  color: whitesmoke;
+  font-size: 30px;
+}
+.button-div{
+  justify-content: right;
+  margin: auto;
+  padding: 50px;
+}
+#contact-btn{
+  color: whitesmoke;
+  background-color: burlywood;
+  border: 3px solid rgb(29, 29, 29);
+  margin: 10px;
+  font-size: 18px;
+}
+#contact-btn2{
+  color: whitesmoke;
+  background-color: burlywood;
+  border: 3px solid rgb(29, 29, 29);
+  margin: 10px;
+  font-size: 18px;
+  padding-right: 23px;
+}
+#contact-btn:hover, #contact-btn2:hover{
+  font-size: 20px;
+  background-color: rgb(190, 156, 110);
+}
+/*             */
+
+/* Footer CSS */
+#footer{
+  padding: 35px;
+  text-align: center;
+  
 }

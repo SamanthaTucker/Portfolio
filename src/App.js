@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Navbar from './Components/Navbar'
+import Header from './Components/Header'
+import Projects from './Components/Projects'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import Skills from './Components/Skills'
+import Footer from './Components/Footer'
+import './App.css'
 
-function App() {
+
+import Container from '@material-ui/core/Container'
+
+
+
+class App extends Component {
+
+
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth='lg' className="App">
+
+      <Navbar />
+
+      <Header />
+
+      <About />
+
+      <Skills /> 
+
+
+      <h1 className='projects-h1'> Projects </h1>
+      <Projects />
+
+      <Contact />
+
+      <Footer />
+    </Container>
   );
+}
 }
 
 export default App;
